@@ -14,11 +14,9 @@
 5. **Alisson Alexandra Lovo** - *Desarrollador Backend*
 6. **Vidal Antonio Mejía Zelaya** - *Desarrollador Backend*
 7. **Tatiana Daniela Córdova Landaverde** - *Desarrollador Backend*
+8. **Ashley Jazmín Escobar Muñoz** - *Desarrollador Utilidades*
 9. **Wilfredo Antonio Martínez Zometa** - *Desarrollador Backend*
 10. **José Alfredo Rodríguez Monge** - *Desarrollador Backend*
 11. **Alejandra Lisbeth Rivera Ramos** - *Desarrollador UI / Main*
+12. **Jason Nehemias Valladares Ascensio** - *Desarrollador Backend*
 13. **Julia Elizabeth Luna Gámez** - *Documentador e Informe*
-
-### Pendientes de asignar puesto / rol:
-* Jason Nehemias Valladares Ascensio
-* Ashley Jazmín Escobar Muñoz
