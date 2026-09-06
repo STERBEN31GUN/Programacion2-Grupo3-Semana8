@@ -3,7 +3,7 @@
 **Universidad:** Universidad Evangélica de El Salvador
 **Facultad:** Ingeniería en Desarrollo de Software y Ciencia de Datos
 **Materia:** Programación II
-**Grupo:** 3
+**Grupo:** 3B
 
 ## Integrantes del Equipo
 
