@@ -10,7 +10,7 @@
 1. **Eduardo Alexander Rodríguez Larín** - *Git Master (Líder)*
 2. **Frery Joel Vásquez Galdamez** - *QA (Quality Assurance)*
 3. **Lucas Emanuel Amaya Molina** - *Desarrollador Backend*
-4. **Rafael Eduardo Ochoa Cruz** - *Desarrollador Backend*
+4. **Jason Nehemias Valladares Ascencio** - *Desarrollador Backend*
 5. **Alisson Alexandra Lovo** - *Desarrollador Backend*
 6. **Vidal Antonio Mejía Zelaya** - *Desarrollador Backend*
 7. **Tatiana Daniela Córdova Landaverde** - *Desarrollador Backend*
