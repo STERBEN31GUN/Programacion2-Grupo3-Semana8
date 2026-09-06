@@ -20,4 +20,4 @@
 11. **Alejandra Lisbeth Rivera Ramos** - *Desarrollador UI / Main*
 12. **Jason Nehemias Valladares Ascensio** - *Desarrollador Backend*
 13. **Julia Elizabeth Luna Gámez** - *Documentador e Informe*
-## Estado del Proyecto: En Fase de QA y Pruebas
+## Estado del Proyecto: Evaluando Módulos y Correcciones
