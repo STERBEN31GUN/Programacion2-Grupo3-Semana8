@@ -1,74 +1,17 @@
 public class Inventario {
-
-    private int id;
-    private String nombreProducto;
+    private String idProducto;
+    private String nombre;
     private int cantidad;
-    private double precioUnitario;
-    private Categoria categoria;
+    private double precio;
 
-    public Inventario() {
-    }
-
-    public Inventario(int id, String nombreProducto, int cantidad, double precioUnitario, Categoria categoria) {
-        this.id = id;
-        this.nombreProducto = nombreProducto;
+    public Inventario(String idProducto, String nombre, int cantidad, double precio) {
+        this.idProducto = idProducto;
+        this.nombre = nombre;
         this.cantidad = cantidad;
-        this.precioUnitario = precioUnitario;
-        this.categoria = categoria;
+        this.precio = precio;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombreProducto() {
-        return nombreProducto;
-    }
-
-    public void setNombreProducto(String nombreProducto) {
-        this.nombreProducto = nombreProducto;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public double getPrecioUnitario() {
-        return precioUnitario;
-    }
-
-    public void setPrecioUnitario(double precioUnitario) {
-        this.precioUnitario = precioUnitario;
-    }
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
-
-    public double calcularValorTotal() {
-        return cantidad * precioUnitario;
-    }
-
-    @Override
-    public String toString() {
-        return "Inventario{" +
-                "id=" + id +
-                ", nombreProducto='" + nombreProducto + '\'' +
-                ", cantidad=" + cantidad +
-                ", precioUnitario=" + precioUnitario +
-                ", categoria=" + (categoria != null ? categoria.getNombre() : "N/A") +
-                '}';
+    public void mostrarInfo() {
+        System.out.println("Producto: " + nombre + " | Stock: " + cantidad + " | Precio: $" + precio);
     }
 }
