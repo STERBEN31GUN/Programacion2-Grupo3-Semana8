@@ -7,4 +7,4 @@ public class Validador {
     public static boolean esNumeroPositivo(int numero) {
         return numero > 0;
     }
-}
+} jason
