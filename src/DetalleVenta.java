@@ -1,21 +1,18 @@
-public class DetalleVenta {
-<<<<<<< HEAD
-    private int id;
+public class DetalleVenta { 
     private double subtotal;
-
-    public double calcularSubtotal() {
-        return subtotal;
-    }
-}
-=======
     private String nombreProducto;
     private int cantidad;
     private double precioUnitario;
 
     public DetalleVenta(String nombreProducto, int cantidad, double precioUnitario) {
         this.nombreProducto = nombreProducto;
-        this.cantidad = cantidad;
-        this.precioUnitario = precioUnitario;
+        setCantidad(cantidad);       // Usamos el setter para aplicar la validación
+        setPrecioUnitario(precioUnitario); // Usamos el setter para aplicar la validación
+        this.subtotal = calcularSubtotal();
+    }
+
+    public double calcularSubtotal() {
+        return this.cantidad * this.precioUnitario; // Corregido el operador *
     }
 
     public String getNombreProducto() {
@@ -23,6 +20,9 @@ public class DetalleVenta {
     }
 
     public void setNombreProducto(String nombreProducto) {
+        if (nombreProducto == null || nombreProducto.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del producto no puede estar vacío.");
+        }
         this.nombreProducto = nombreProducto;
     }
 
@@ -31,7 +31,11 @@ public class DetalleVenta {
     }
 
     public void setCantidad(int cantidad) {
+        if (cantidad <= 0) {
+            throw new IllegalArgumentException("La cantidad debe ser mayor a cero.");
+        }
         this.cantidad = cantidad;
+        this.subtotal = calcularSubtotal(); // Actualiza el subtotal automáticamente
     }
 
     public double getPrecioUnitario() {
@@ -39,11 +43,18 @@ public class DetalleVenta {
     }
 
     public void setPrecioUnitario(double precioUnitario) {
+        if (precioUnitario <= 0) {
+            throw new IllegalArgumentException("El precio unitario debe ser mayor a cero.");
+        }
         this.precioUnitario = precioUnitario;
+        this.subtotal = calcularSubtotal(); // Actualiza el subtotal automáticamente
     }
 
     public double getSubtotal() {
-        return cantidad * precioUnitario;
+        return subtotal;
+    }
+
+    public void setSubtotal(double subtotal) {
+        this.subtotal = subtotal;
     }
 }
->>>>>>> origin/feature/modulo-venta-factura

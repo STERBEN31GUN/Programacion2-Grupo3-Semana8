@@ -9,18 +9,18 @@ import java.util.Optional;
  */
 public class DescuentoService {
 
-    private List listaDescuentos = new ArrayList<>();
+    private List<Descuento> listaDescuentos = new ArrayList<>(); // <-- Aquí agregamos <Descuento>
 
     public Descuento guardarDescuento(Descuento descuento) {
         listaDescuentos.add(descuento);
         return descuento;
     }
 
-    public List obtenerTodos() {
+    public List<Descuento> obtenerTodos() {
         return listaDescuentos;
     }
 
-    public Optional buscarPorCodigo(String codigo) {
+    public Optional<Descuento> buscarPorCodigo(String codigo) {
         return listaDescuentos.stream()
                 .filter(d -> d.getCodigo().equalsIgnoreCase(codigo))
                 .findFirst();
@@ -36,7 +36,7 @@ public class DescuentoService {
     }
 
     public Double calcularMontoConDescuento(Double montoOriginal, String codigo) {
-        Optional descuentoOpt = buscarPorCodigo(codigo);
+        Optional<Descuento> descuentoOpt = buscarPorCodigo(codigo);
 
         if (descuentoOpt.isPresent() && esDescuentoValido(descuentoOpt.get())) {
             Double porcentaje = descuentoOpt.get().getPorcentaje();
